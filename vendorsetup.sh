@@ -1,2 +1,2 @@
-add_lunch_combo cm_moto_msm8960dt-userdebug
+add_lunch_combo cmb_moto_msm8960dt-userdebug
 
