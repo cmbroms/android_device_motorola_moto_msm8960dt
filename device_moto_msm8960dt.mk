@@ -33,9 +33,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
 
 # Audio
-PRODUCT_PACKAGES += \
-    audio_policy.msm8960 \
-    audio.primary.msm8960
+#PRODUCT_PACKAGES += \
+#    audio_policy.msm8960 \
+#    audio.primary.msm8960
 
 # HAL
 PRODUCT_PACKAGES += \
