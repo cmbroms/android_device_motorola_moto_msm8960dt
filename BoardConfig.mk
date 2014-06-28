@@ -48,9 +48,9 @@ TARGET_USES_WCNSS_CTRL := true
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8960dt-common
-TARGET_KERNEL_CONFIG := msm8960_mmi_defconfig
+TARGET_KERNEL_CONFIG := msm8960dt_mmi_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := msm8960_mmi_selinux_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 maxcpus=2 vmalloc=400M androidboot.write_protect=0 zcache androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 maxcpus=2 vmalloc=400M androidboot.write_protect=0 zcache
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02200000 --dt $(LOCAL_PATH)/dt.img
@@ -68,7 +68,6 @@ TARGET_USES_QCOM_BSP := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
 
 # Audio
-USE_PROPRIETARY_AUDIO_EXTENSIONS := false
 BOARD_USES_LEGACY_ALSA_AUDIO := true
 
 # Charger
@@ -76,6 +75,9 @@ BOARD_CHARGER_RES := device/motorola/moto_msm8960dt/charger
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+
+# GPS
+BOARD_HAVE_NEW_QC_GPS := true
 
 # Graphics
 TARGET_QCOM_DISPLAY_VARIANT := caf
