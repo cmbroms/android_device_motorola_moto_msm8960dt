@@ -2,7 +2,7 @@
 $(call inherit-product, vendor/cmb/config/common_full_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cmb/config/nfc_enhanced.mk)
+#$(call inherit-product, vendor/cmb/config/nfc_enhanced.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
